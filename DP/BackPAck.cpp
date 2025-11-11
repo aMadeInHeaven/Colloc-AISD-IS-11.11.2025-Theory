@@ -24,7 +24,7 @@ int main() {
             
             // Берем i-й предмет, если он помещается
             if (w >= weights[i - 1]) {
-                dp[i][w] = std::max(dp[i][w], 
+                dp[i][w] = std::max(dp[i - 1][w], 
                                   dp[i - 1][w - weights[i - 1]] + values[i - 1]);
             }
         }

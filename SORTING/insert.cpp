@@ -13,7 +13,7 @@ void InsertSort(int* mas, int n) {
     for (int i = 1; i < n; ++i) {
         elem = mas[i];
         j = i - 1;
-        while (j >= 0 && mas[j] > elem) {
+        while (j >= 0 && mas[j] >= elem) {
             mas[j + 1] = mas[j];
             --j;
         }

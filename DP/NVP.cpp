@@ -53,6 +53,22 @@ int main() {
             length = std::max(length, j); // Обновляем максимальную длину
         }
     }
+    std::cout << "elem ";
+    for (int i = 0; i < n; ++i) {
+        std::cout << elems[i] << ' ';
+    }
+    std::cout << '\n';
+    std::cout << "posi ";
+    for (int i = 0; i < n; ++i) {
+        std::cout << pos[i] << ' ';
+    }
+    std::cout << '\n';
+    std::cout << "prev ";
+    for (int i = 0; i < n; ++i) {
+        std::cout << prev[i] << ' ';
+    }
+    std::cout << '\n';
+
 
     std::cout << length;  // Выводим длину наибольшей возрастающей подпоследовательности
 
